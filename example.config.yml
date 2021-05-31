@@ -1,0 +1,8 @@
+# This is used to gain access to the TwitchAPI
+accessToken: TwitchAccessToken
+
+# This can be obtained from https://dev.twitch.tv/console
+clientID: Twitch Client ID
+
+# can be obtained from https://discordapp.com/developers/applications
+discordBotToken: Your Discord Bot Token

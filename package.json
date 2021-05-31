@@ -1,0 +1,32 @@
+{
+  "name": "twitchliveposter",
+  "version": "1.0.0",
+  "description": "A discord bot which will post whenever the selected channels go live",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./build/bot.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingOKarma/TwitchLivePoster.git"
+  },
+  "author": "KingOKarma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingOKarma/TwitchLivePoster/issues"
+  },
+  "homepage": "https://github.com/KingOKarma/TwitchLivePoster#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.1",
+    "@types/node": "^15.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0"
+  }
+}
