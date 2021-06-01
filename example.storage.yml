@@ -1,0 +1,3 @@
+channels: []
+liveAnnouceChannelID: "CHANNE ID FOR THE ANNOUCEMENT CHANNEL"
+liveMessage: "THE MESSAGE THAT IS SENT WHEN A USER GOES LIVE, use {link} for the link and {user} for the user"

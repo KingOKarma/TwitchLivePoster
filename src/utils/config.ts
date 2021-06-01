@@ -8,6 +8,7 @@ import fs from "fs";
  * @property {string} accessToken
  * @property {string} clientID
  * @property {string} discordBotToken
+ * @property {string} prefix
 
  */
 export default class Config {
@@ -19,12 +20,14 @@ export default class Config {
 
     public readonly discordBotToken: string;
 
+    public readonly prefix: string
 
 
     private constructor() {
         this.accessToken = "";
         this.clientID = "";
         this.discordBotToken = "";
+        this.prefix = "";
 
     }
 

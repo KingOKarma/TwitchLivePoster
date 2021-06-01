@@ -6,3 +6,4 @@ config.yml
 build
 .env
 users.yml
+storage.yml

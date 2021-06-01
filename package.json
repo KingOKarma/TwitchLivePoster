@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && node ./build/bot.js"
-
   },
   "repository": {
     "type": "git",
@@ -19,10 +18,14 @@
   },
   "homepage": "https://github.com/KingOKarma/TwitchLivePoster#readme",
   "dependencies": {
+    "cron": "^1.8.2",
     "discord.js": "^12.5.3",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "twitch": "^4.5.5",
+    "twitch-auth": "^4.5.5"
   },
   "devDependencies": {
+    "@types/cron": "^1.7.2",
     "@types/js-yaml": "^4.0.1",
     "@types/node": "^15.6.1",
     "@typescript-eslint/eslint-plugin": "^4.26.0",

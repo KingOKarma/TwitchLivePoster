@@ -6,3 +6,5 @@ clientID: Twitch Client ID
 
 # can be obtained from https://discordapp.com/developers/applications
 discordBotToken: Your Discord Bot Token
+
+prefix: "YOUR PREFIX"
