@@ -41,6 +41,7 @@ bot.on("ready", () => {
                 const replace = new RegExp("{link}", "g");
                 response = response.replace(replace, `https://twitch.tv/${channel.name}`);
             }
+
             const twitchUser = await user.getUser();
             if (twitchUser === null) return;
  
@@ -54,8 +55,6 @@ bot.on("ready", () => {
                 channel.annoucedLive = true;
                 Storage.saveConfig();
             })
-
-
         })
     })
     liveCheck.start();
@@ -64,9 +63,8 @@ bot.on("ready", () => {
 
 bot.on("message", (msg) => {
     if (msg.author.bot) return;
-
+    if (!msg.content.startsWith(CONFIG.prefix)) return;
     const args = msg.content.slice(prefix.length).trim().split(/ +/g);
-
     const cmd = args.shift()?.toLowerCase();
 
     if (cmd === undefined) {
