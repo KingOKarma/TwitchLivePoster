@@ -67,7 +67,7 @@ exports.run = async (
         case "list":
             let page = 1;
             let number = args[1];
-            if (args[1] === undefined) number = "a";
+            if (args[1] === undefined) number = "This is a String";
             if (number.match('^[0-9]+$')) page = Number(number);
 
             const formattedArray: string[] = []
@@ -75,7 +75,7 @@ exports.run = async (
                 formattedArray.push(`\`${index + 1}\` - **${usersArray.name}**\n`);
             });
 
-            const channelsPaged: string[] = paginate(formattedArray, 3, page)
+            const channelsPaged: string[] = paginate(formattedArray, 9, page)
 
             if (channelsPaged.length === 0) {
                 return msg.channel.send("There are no channels on that page Or There are no users on the list!");

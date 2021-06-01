@@ -23,7 +23,7 @@ export const commandList = [
  * @param {number} pageNumber Which Page number do you wish to be on?
  * @returns {Array} an array
  */
- export function paginate(array: string[], pageSize: number, pageNumber: number): string[] {
+ export function paginate(array: any[], pageSize: number, pageNumber: number): any[] {
     return array.slice((pageNumber - 1) * pageSize, pageNumber * pageSize);
   }
 
