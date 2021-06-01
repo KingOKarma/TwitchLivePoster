@@ -7,12 +7,12 @@ export const CONFIG = Config.getConfig();
 export const STORAGE = Storage.getConfig();
 
 export const commandList = [
-    // System CMDs
-    { aliases: ["twitch"], group: "Twitch", name: "channel" },
-
+    
     // Help CMDs
-    { aliases: ["command", "commands"], group: "System", name: "help" },
-
+    { aliases: ["command", "commands"], desc: "This command!", group: "System", name: "help" },
+        
+    // System CMDs
+    { aliases: ["twitch"], desc: "Used to add, remove or list Twitch channels from the live watch", group: "Twitch", name: "channel" },
 
 ];
 
